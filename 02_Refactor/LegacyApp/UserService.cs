@@ -35,21 +35,12 @@ namespace LegacyApp
             }
             else if (client.Type == "ImportantClient")
             {
-                using (var userCreditService = new UserCreditService())
-                {
-                    int creditLimit = userCreditService.GetCreditLimit(user.LastName, user.DateOfBirth);
-                    creditLimit = creditLimit * 2;
-                    user.CreditLimit = creditLimit;
-                }
+                user.CreditLimit = GetCreditLimit(user.LastName, user.DateOfBirth) * 2;
             }
             else
             {
                 user.HasCreditLimit = true;
-                using (var userCreditService = new UserCreditService())
-                {
-                    int creditLimit = userCreditService.GetCreditLimit(user.LastName, user.DateOfBirth);
-                    user.CreditLimit = creditLimit;
-                }
+                user.CreditLimit = GetCreditLimit(user.LastName, user.DateOfBirth);
             }
             
             if (user.HasCreditLimit && user.CreditLimit < 500)
@@ -86,6 +77,14 @@ namespace LegacyApp
             }
 
             return age;
+        }
+
+        private int GetCreditLimit(string lastName, DateTime dateOfBirth)
+        {
+            using (var userCreditService = new UserCreditService())
+            {
+                return userCreditService.GetCreditLimit(lastName, dateOfBirth);
+            }
         }
     }
     
