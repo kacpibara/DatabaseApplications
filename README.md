@@ -1,2 +1,3 @@
-# APBD-Aplikacje-Baz-Danych-Database-Applications
+# Aplikacje Baz Danych / Database Applications
+
 .NET
