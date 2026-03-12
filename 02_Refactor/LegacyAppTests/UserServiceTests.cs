@@ -1,4 +1,5 @@
 using LegacyApp;
+using NSubstitute;
 
 namespace LegacyAppTests;
 
@@ -119,5 +120,28 @@ public class UserServiceTests
         {
             _ = service.AddUser("John", "Andrzejewicz", "andrzejewicz@wp.pl", new DateTime(1980, 1, 1), 6);
         });
+    }
+    
+    [Fact]
+    public void AddUser_Should_Return_True_When_All_Dependencies_Are_Mocked()
+    {
+        // Arrange
+        var clientRepositoryMock = Substitute.For<IClientRepository>();
+        var creditServiceMock = Substitute.For<IUserCreditService>();
+        var userDataAccessMock = Substitute.For<IUserDataAccess>();
+        
+        clientRepositoryMock.GetById(1).Returns(new Client 
+        { 
+            ClientId = 1, 
+            Type = "VeryImportantClient" 
+        });
+        
+        var service = new UserService(clientRepositoryMock, creditServiceMock, userDataAccessMock);
+
+        // Act
+        var result = service.AddUser("Jan", "Kowalski", "kowalski@wp.pl", new DateTime(1980, 1, 1), 1);
+
+        // Assert
+        Assert.True(result);
     }
 }
