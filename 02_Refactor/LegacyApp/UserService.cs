@@ -5,13 +5,16 @@ namespace LegacyApp
     public class UserService
     {
         private readonly IClientRepository _clientRepository;
+        private readonly IUserCreditService _userCreditService;
         public UserService()
         {
             _clientRepository = new ClientRepository();
+            _userCreditService = new UserCreditService();
         }
         public UserService(IClientRepository clientRepository)
         {
             _clientRepository = clientRepository;
+            _userCreditService = new UserCreditService();
         }
         public bool AddUser(string firstName, string lastName, string email, DateTime dateOfBirth, int clientId)
         {
@@ -89,10 +92,7 @@ namespace LegacyApp
 
         private int GetCreditLimit(string lastName, DateTime dateOfBirth)
         {
-            using (var userCreditService = new UserCreditService())
-            {
-                return userCreditService.GetCreditLimit(lastName, dateOfBirth);
-            }
+            return _userCreditService.GetCreditLimit(lastName, dateOfBirth);
         }
     }
     
