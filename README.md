@@ -30,3 +30,13 @@ Implementacja od podstaw serwera REST API do zarządzania zasobami (zwierzętami
 
 ---
 *Projekt zrealizowany w celach edukacyjnych.*
+
+### [Zadanie 4: Asynchroniczność i Transakcje w SQL Server](./04_Rest_API_Async_And_Transactions)
+Rozszerzenie pracy z bazą danych o operacje asynchroniczne oraz bezpieczne zarządzanie stanem za pomocą transakcji. Projekt symuluje zaawansowane operacje magazynowe.
+* **Cel:** Zapewnienie pełnej spójności danych (ACID) podczas wieloetapowych operacji zapisu i aktualizacji.
+* **Zastosowane praktyki:**
+  * W pełni asynchroniczna komunikacja z bazą danych (`async`/`await`, `OpenAsync`, `ExecuteScalarAsync`).
+  * Implementacja **Transakcji Bazodanowych** (`SqlTransaction`) z obsługą zatwierdzania (Commit) i wycofywania zmian (Rollback) w przypadku błędu.
+  * Bezpośrednie wywoływanie i obsługa **Procedur Składowanych** (Stored Procedures) z poziomu kodu C#.
+  * Ścisłe zarządzanie cyklem życia połączeń i bezpieczne przekazywanie kontekstu transakcji między poleceniami SQL.
+  * Prawidłowa obsługa brakujących danych (`DBNull` vs `null`) oraz natywnych wyjątków SQL.
