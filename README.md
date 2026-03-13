@@ -40,3 +40,12 @@ Rozszerzenie pracy z bazą danych o operacje asynchroniczne oraz bezpieczne zarz
   * Bezpośrednie wywoływanie i obsługa **Procedur Składowanych** (Stored Procedures) z poziomu kodu C#.
   * Ścisłe zarządzanie cyklem życia połączeń i bezpieczne przekazywanie kontekstu transakcji między poleceniami SQL.
   * Prawidłowa obsługa brakujących danych (`DBNull` vs `null`) oraz natywnych wyjątków SQL.
+
+### [Zadanie 5: Entity Framework Core (Database First) & REST API](./05_EntityFrameworkCore_DataBase1st)
+Przejście z surowych zapytań SQL (ADO.NET) na nowoczesny system mapowania obiektowo-relacyjnego (ORM). Projekt demonstruje budowę API dla biura podróży z wykorzystaniem Entity Framework Core.
+* **Cel:** Nauka pracy z relacyjnymi bazami danych przy użyciu podejścia "Database First" oraz zapytań LINQ.
+* **Zastosowane praktyki:**
+  * Konfiguracja i wstrzykiwanie zależności dla `DbContext`.
+  * Zaawansowane zapytania LINQ: złączenia tabel (`Include`, `ThenInclude`), sortowanie (`OrderByDescending`) oraz rzutowanie encji bazodanowych na obiekty transferu danych (`Select` do DTO).
+  * Zarządzanie cyklem życia encji: dodawanie nowych rekordów, usuwanie z zachowaniem integralności referencyjnej (sprawdzanie kluczy obcych przed `Remove`).
+  * Strukturyzacja projektu z podziałem na Kontrolery, Modele (Encje), Kontekst Bazy Danych i DTOs.
