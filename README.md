@@ -28,9 +28,6 @@ Implementacja od podstaw serwera REST API do zarządzania zasobami (zwierzętami
     * Obsługa pełnego cyklu CRUD (Create, Read, Update, Delete) z poprawnymi kodami statusów HTTP.
     * Walidacja danych wejściowych za pomocą `Data Annotations`.
 
----
-*Projekt zrealizowany w celach edukacyjnych.*
-
 ### [Zadanie 4: Asynchroniczność i Transakcje w SQL Server](./04_Rest_(API_Async_And_Transactions)/)
 Rozszerzenie pracy z bazą danych o operacje asynchroniczne oraz bezpieczne zarządzanie stanem za pomocą transakcji. Projekt symuluje zaawansowane operacje magazynowe.
 * **Cel:** Zapewnienie pełnej spójności danych (ACID) podczas wieloetapowych operacji zapisu i aktualizacji.
@@ -67,3 +64,6 @@ Budowa API dla kliniki medycznej z wykorzystaniem generowania bazy danych z pozi
   * **Fluent API:** Konfiguracja tabel, kluczy obcych i ograniczeń (np. `HasMaxLength`) całkowicie wydzielona do klas `IEntityTypeConfiguration<T>`.
   * **Wzorzec DTO:** Całkowita separacja encji bazodanowych od kontraktów API poprzez wejściowe i wyjściowe obiekty Data Transfer Objects.
   * Zaawansowane zapytania LINQ (`Include`, `ThenInclude`) do ładowania złożonych relacji w endpointach typu GET.
+ 
+---
+*Projekt zrealizowany w celach edukacyjnych.*
