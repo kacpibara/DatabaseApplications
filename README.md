@@ -49,3 +49,13 @@ Przejście z surowych zapytań SQL (ADO.NET) na nowoczesny system mapowania obie
   * Zaawansowane zapytania LINQ: złączenia tabel (`Include`, `ThenInclude`), sortowanie (`OrderByDescending`) oraz rzutowanie encji bazodanowych na obiekty transferu danych (`Select` do DTO).
   * Zarządzanie cyklem życia encji: dodawanie nowych rekordów, usuwanie z zachowaniem integralności referencyjnej (sprawdzanie kluczy obcych przed `Remove`).
   * Strukturyzacja projektu z podziałem na Kontrolery, Modele (Encje), Kontekst Bazy Danych i DTOs.
+
+### [Zadanie Dodatkowe: LINQ Tutorial (LINQ to Objects)](./LinqTutorials)
+Praktyczny zestaw 15 zaawansowanych zadań polegających na manipulacji lokalnymi kolekcjami danych w pamięci RAM za pomocą zapytań LINQ.
+* **Cel:** Dogłębne zrozumienie mechanizmów strumieniowego przetwarzania danych i składni LINQ (Method Syntax).
+* **Zastosowane praktyki:**
+  * Filtrowanie i sortowanie danych (`Where`, `OrderBy`, `ThenByDescending`).
+  * Agregacje i predykaty (`Count`, `Max`, `Any`).
+  * Złożone transformacje i projekcje do typów anonimowych (`Select`).
+  * Grupowanie i łączenie różnych kolekcji (`GroupBy`, `Join`, `Union`).
+  * Tworzenie własnych metod rozszerzających (*Extension Methods*) dla interfejsu `IEnumerable<T>`.
