@@ -11,7 +11,7 @@ Repozytorium zawiera projekty realizowane w ramach przedmiotu Aplikacje Baz Dany
 
 ## Struktura Zadań
 
-### [Zadanie 2: Refaktoryzacja i SOLID](./02_Refactor)
+### [Zadanie 2: Refaktoryzacja i SOLID](./02_Refactor/)
 Projekt polegający na refaktoryzacji istniejącego (Legacy) kodu.
 * **Cel:** Poprawa czytelności, testowalności oraz zmniejszenie długu technologicznego.
 * **Zastosowane praktyki:** * Wyodrębnienie metod (SRP z SOLID).
@@ -19,7 +19,7 @@ Projekt polegający na refaktoryzacji istniejącego (Legacy) kodu.
     * Zastosowanie wzorca projektowego **Adapter**.
     * Napisanie superszybkich testów jednostkowych przy użyciu biblioteki **NSubstitute** do mockowania warstwy dostępu do danych.
 
-### [Zadanie 3: REST API & SQL Connection](./03_Rest_API_SQL_Connection)
+### [Zadanie 3: REST API & SQL Connection](./03_Rest_API(SQL_Connection)/)
 Implementacja od podstaw serwera REST API do zarządzania zasobami (zwierzętami) w bazie danych SQL.
 * **Cel:** Stworzenie w pełni funkcjonalnego API z zachowaniem czystej architektury.
 * **Zastosowane praktyki:**
@@ -31,7 +31,7 @@ Implementacja od podstaw serwera REST API do zarządzania zasobami (zwierzętami
 ---
 *Projekt zrealizowany w celach edukacyjnych.*
 
-### [Zadanie 4: Asynchroniczność i Transakcje w SQL Server](./04_Rest_API_Async_And_Transactions)
+### [Zadanie 4: Asynchroniczność i Transakcje w SQL Server](./04_Rest_(API_Async_And_Transactions)/)
 Rozszerzenie pracy z bazą danych o operacje asynchroniczne oraz bezpieczne zarządzanie stanem za pomocą transakcji. Projekt symuluje zaawansowane operacje magazynowe.
 * **Cel:** Zapewnienie pełnej spójności danych (ACID) podczas wieloetapowych operacji zapisu i aktualizacji.
 * **Zastosowane praktyki:**
@@ -41,7 +41,7 @@ Rozszerzenie pracy z bazą danych o operacje asynchroniczne oraz bezpieczne zarz
   * Ścisłe zarządzanie cyklem życia połączeń i bezpieczne przekazywanie kontekstu transakcji między poleceniami SQL.
   * Prawidłowa obsługa brakujących danych (`DBNull` vs `null`) oraz natywnych wyjątków SQL.
 
-### [Zadanie 5: Entity Framework Core (Database First) & REST API](./05_EntityFrameworkCore_DataBase1st)
+### [Zadanie 5: Entity Framework Core (Database First) & REST API](./05_EFCore_DatabaseFirst/)
 Przejście z surowych zapytań SQL (ADO.NET) na nowoczesny system mapowania obiektowo-relacyjnego (ORM). Projekt demonstruje budowę API dla biura podróży z wykorzystaniem Entity Framework Core.
 * **Cel:** Nauka pracy z relacyjnymi bazami danych przy użyciu podejścia "Database First" oraz zapytań LINQ.
 * **Zastosowane praktyki:**
@@ -50,7 +50,7 @@ Przejście z surowych zapytań SQL (ADO.NET) na nowoczesny system mapowania obie
   * Zarządzanie cyklem życia encji: dodawanie nowych rekordów, usuwanie z zachowaniem integralności referencyjnej (sprawdzanie kluczy obcych przed `Remove`).
   * Strukturyzacja projektu z podziałem na Kontrolery, Modele (Encje), Kontekst Bazy Danych i DTOs.
 
-### [Zadanie Dodatkowe: LINQ Tutorial (LINQ to Objects)](./LinqTutorials)
+### [Zadanie Dodatkowe: LINQ Tutorial (LINQ to Objects)](./05/Extra_Linq/LinqCwiczenia/LinqTutorials/)
 Praktyczny zestaw 15 zaawansowanych zadań polegających na manipulacji lokalnymi kolekcjami danych w pamięci RAM za pomocą zapytań LINQ.
 * **Cel:** Dogłębne zrozumienie mechanizmów strumieniowego przetwarzania danych i składni LINQ (Method Syntax).
 * **Zastosowane praktyki:**
@@ -60,7 +60,7 @@ Praktyczny zestaw 15 zaawansowanych zadań polegających na manipulacji lokalnym
   * Grupowanie i łączenie różnych kolekcji (`GroupBy`, `Join`, `Union`).
   * Tworzenie własnych metod rozszerzających (*Extension Methods*) dla interfejsu `IEnumerable<T>`.
 
-### [Zadanie 6: Entity Framework Core (Code First) & Fluent API](./Task6Application)
+### [Zadanie 6: Entity Framework Core (Code First) & Fluent API](./06_EFCore_CodeFirst/)
 Budowa API dla kliniki medycznej z wykorzystaniem generowania bazy danych z poziomu kodu (Migrations).
 * **Cel:** Praktyczne zastosowanie podejścia Code First, zarządzanie migracjami oraz izolacja modeli.
 * **Zastosowane praktyki:**
