@@ -59,3 +59,11 @@ Praktyczny zestaw 15 zaawansowanych zadań polegających na manipulacji lokalnym
   * Złożone transformacje i projekcje do typów anonimowych (`Select`).
   * Grupowanie i łączenie różnych kolekcji (`GroupBy`, `Join`, `Union`).
   * Tworzenie własnych metod rozszerzających (*Extension Methods*) dla interfejsu `IEnumerable<T>`.
+
+### [Zadanie 6: Entity Framework Core (Code First) & Fluent API](./Task6Application)
+Budowa API dla kliniki medycznej z wykorzystaniem generowania bazy danych z poziomu kodu (Migrations).
+* **Cel:** Praktyczne zastosowanie podejścia Code First, zarządzanie migracjami oraz izolacja modeli.
+* **Zastosowane praktyki:**
+  * **Fluent API:** Konfiguracja tabel, kluczy obcych i ograniczeń (np. `HasMaxLength`) całkowicie wydzielona do klas `IEntityTypeConfiguration<T>`.
+  * **Wzorzec DTO:** Całkowita separacja encji bazodanowych od kontraktów API poprzez wejściowe i wyjściowe obiekty Data Transfer Objects.
+  * Zaawansowane zapytania LINQ (`Include`, `ThenInclude`) do ładowania złożonych relacji w endpointach typu GET.
