@@ -1,6 +1,18 @@
-# Aplikacje Baz Danych / Database Applications (APBD) - Zbiór Zadań
+# Aplikacje Baz Danych / Database Applications (APBD)
 
 Repozytorium zawiera projekty realizowane w ramach przedmiotu Aplikacje Baz Danych (APBD). Celem projektów jest praktyczne zastosowanie technologii .NET oraz wzorców projektowych w komunikacji z bazami danych.
+
+## Spis Treści
+- [Technologie i Narzędzia](#technologie-i-narzędzia)
+- [Struktura Zadań](#struktura-zadań)
+  - [Zadanie 2: Refaktoryzacja i SOLID](#zadanie-2-refaktoryzacja-i-solid)
+  - [Zadanie 3: REST API & SQL Connection](#zadanie-3-rest-api--sql-connection)
+  - [Zadanie 4: Asynchroniczność i Transakcje w SQL Server](#zadanie-4-asynchroniczność-i-transakcje-w-sql-server)
+  - [Zadanie 5: Entity Framework Core (Database First) & REST API](#zadanie-5-entity-framework-core-database-first--rest-api)
+  - [Zadanie Dodatkowe: LINQ Tutorial (LINQ to Objects)](#zadanie-dodatkowe-linq-tutorial-linq-to-objects)
+  - [Zadanie 6: Entity Framework Core (Code First) & Fluent API](#zadanie-6-entity-framework-core-code-first--fluent-api)
+
+---
 
 ## Technologie i Narzędzia
 * **Język:** C# 12
